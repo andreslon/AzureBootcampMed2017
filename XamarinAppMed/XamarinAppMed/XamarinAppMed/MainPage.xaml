@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinAppMed"
+             x:Class="XamarinAppMed.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrimaryColor">#468847</Color>
+            <Color x:Key="BackgroundEntryColor">#E1E1E1</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView>
+        <Grid BackgroundColor="#F2F2F2" Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackLayout>
+                    <Label Text="Global Azure Medellín" HorizontalOptions="CenterAndExpand" FontSize="Large" TextColor="Gray"/>
+                    <Label Text="Xamarino" FontSize="Medium" TextColor="{StaticResource PrimaryColor}"/>
+                    <Entry x:Name="xamarino" BackgroundColor="{StaticResource BackgroundEntryColor}" TextColor="Black" />
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Button x:Name="BtnEnviarDatos" Text="Registrar Xamarino" FontSize="Medium" BackgroundColor="{StaticResource PrimaryColor}" TextColor="#FFFFFF"/>
+            </Grid>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

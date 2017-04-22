@@ -1,0 +1,26 @@
+﻿{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ],
+      "authLevel": "function"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "table",
+      "name": "outTable",
+      "tableName": "Xamarinos",
+      "connection": "DefaultEndpointsProtocol=https;AccountName=xamarinmedstorage;AccountKey=moZQdWb5v3Fefl0SHpA7AdH07LXXo4Dz3KoPt0UadVi+2tsOu58/YNbhRxfb2DjEiWe57yEGHMNao5QlPs+wcQ==;EndpointSuffix=core.windows.net",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
